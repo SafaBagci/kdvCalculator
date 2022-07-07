@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        double input;
+        double kdvRatio = 0.18;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter amount of money:");
+        input = sc.nextDouble();
+
+        double kdvAmount = (input * kdvRatio);
+        double totalAmount =(input + kdvAmount);
+
+        System.out.println("Amount of the KDV is: " + kdvAmount + " $" );
+
+
+        System.out.println("Total amount with the KDV is: " + totalAmount + " $");
+
+    }
+}
